@@ -1,0 +1,22 @@
+/* Reset the styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(243, 231, 231);
+}
+
+#main-div{
+    margin: auto;
+    width: 50%;
+    background-color: limegreen;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 20px;
+    font-family: Verdana;
+    text-align: center;
+}
