@@ -1,10 +1,37 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add a Dessert shop</title>
+
+    <link rel="stylesheet" type="text/css" href="mystyles.css">
+
+    <script>
+        function validateForm(){
+            if (document.getElementById('locationname').value == ""){
+                alert("Please enter a dessert shop name!")
+                return false;
+            }else{
+                return true
+            }
+        }
+    </script>
 </head>
 <body>
+    <main id="main-div">
+        <form method="POST" action="save_location.php" onsubmit="return validateForm()">
+            <p>
+                Dessert Shop Name:
+                <input type="text" name="locationname" id="locationname">
+            </p>
+            <p>
+                Full Address (street, city, state): 
+                <input type="text" name="address" id="address">
+            </p>
+            <input type="submit">
+        </form>
+    </main>
     
 </body>
 </html>
